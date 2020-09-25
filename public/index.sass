@@ -1,0 +1,63 @@
+.titleBar
+  display: flex
+  justify-content: space-evenly
+  align-items: center
+  align-content: stretch
+  div
+    flex: 1
+    height: 100%
+    text-align: center
+  .title
+    flex-grow: 1
+  .rightLink
+    text-align: right
+  .leftLink
+    text-align: left
+
+div.content
+  display: flex
+  a:hover
+    background-color: lightgrey
+    text-decoration: none
+    font-style: italic
+  a
+    flex: 1
+    div.post
+      display: flex
+      align-content: space-between
+      div
+        flex: 1
+      .title
+        text-align: center
+      .author
+        text-align: right
+
+.theSinglePost
+  >div,>ul
+    margin: 10px 0px
+  .singlePost
+    display: flex
+    flex-flow: row wrap
+    background-color: lightgrey
+    border: 1px solid grey
+    div
+      flex: 0 33.333333333%
+      margin: 10px 0px
+    .title
+      text-align: center
+    .author
+      text-align: right
+  .comments
+    padding: 0px
+    .comment
+      background-color: #f5f5f5
+      padding: 5px 10px
+      margin: 10px 0px
+      display: flex
+      flex-flow: row wrap
+      div
+        flex: 0 50%
+      .date
+        text-align: right
+      .name,.date
+        border-bottom: 1px solid black
