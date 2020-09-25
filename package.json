@@ -4,8 +4,10 @@
   "description": "Front end of a blog.",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --hot ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --mode production",
+    "devstart": "webpack-dev-server --mode development --hot",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "webpack -p"
   },
   "repository": {
     "type": "git",

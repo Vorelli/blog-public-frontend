@@ -1,0 +1,1 @@
+web: npx webpack-dev-server --mode production
